@@ -6,7 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
+ @font-face {
+   font-family: Outfit;
+   src: url(./assets/fonts/ttf/Outfit-SemiBold.ttf);
+   font-weight: 300;
+ }
 
+ * {
+   font-family: Outfit;
+ }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
