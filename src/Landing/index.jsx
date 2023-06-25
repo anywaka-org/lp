@@ -39,7 +39,7 @@ export default function Landing() {
         </div>
         <div className="write_up">
           <div className="text">
-            <p className="top">CONNECTING HELPERS TO ERRANDS</p>
+            <p className="top">Your one-stop to convenience</p>
             <h1>Render help and get some cash</h1>
             <p className="desc">
               Are you feeling too busy, or lazy to do stuff 😔? Get some helping
@@ -111,8 +111,7 @@ export default function Landing() {
               <div className="comment">
                 <h3>Get bids and Negotiate</h3>
                 <p>
-                  Get bids from people interested in doing the work for you.
-                  Negotiate prices and select the best price for you
+                  If a job catches your eye but the price isn't quite right, feel free to make a counteroffer.
                 </p>
               </div>
             </div>
@@ -226,19 +225,15 @@ export default function Landing() {
         <div className="write_up">
           <div className="header">
             <h3>About us</h3>
-            <h1>What we do</h1>
+            <h1>Why Choose Anywork?</h1>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-            libero veritatis ab, inventore molestiae repudiandae consectetur
-            deserunt iusto natus facilis non laboriosam? Commodi nobis enim
-            illum odit delectus dolores adipisci voluptas a eaque? Corrupti
-            doloribus ad, voluptates id modi maiores.
+            AnyWork Nigeria - Think of us like Diner Dash but for errands.
+            We offer an on-demand platform where users can detail their errand needs, connecting them with verified independent service professionals in their community. Whether you need assistance or wish to lend a hand, we're your connection. Anywork instantly matches hundreds of customers every week with top-rated professionals near-by
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-            alias doloremque odio accusantium reiciendis aspernatur illo et sed.
-            Veritatis, voluptate.
+            AnyWork, also known as Anywaka, was founded by NAK  with a mission to enhance productivity by effectively accomplishing errands. We strive to save you time, energy, and money. With a seamless 60-second booking process, AnyWork guarantees a happier and easier life. Experience the AnyWork difference today!
+
           </p>
         </div>
         <div className="">
@@ -279,7 +274,7 @@ export default function Landing() {
                   stroke-linejoin="round"
                 />
               </svg>
-              <span>contact@anywork.com</span>
+              <span>obianywork@gmail.com</span>
             </a>
             <a href="tel:+">
               <svg
@@ -297,7 +292,7 @@ export default function Landing() {
                 />
               </svg>
 
-              <span>1234567</span>
+              <span>08105685600</span>
             </a>
           </div>
         </div>
