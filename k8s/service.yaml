@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: lp-fe
+spec:
+  selector:
+    app: lp
+  ports:
+    - port: 80
+      targetPort: 80

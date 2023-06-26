@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: lp
+  template:
+    metadata:
+      labels:
+        app: lp
+    spec:
+      containers:
+        - name: lp-fe
+          image: radianceobi/anywork-lp-fe:{{ github.sha }}
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              memory: "100Mi"
+              cpu: "50m"
