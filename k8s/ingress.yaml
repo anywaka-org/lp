@@ -11,7 +11,7 @@ spec:
     - hosts:
         - "www.anywaka.org"
         - "anywaka.org"
-      secretName: lp-anywaka-api-tls
+      secretName: lp-anywaka-tls
   rules:
     - host: anywaka.org
       http:
