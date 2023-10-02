@@ -9,11 +9,11 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - "www.anywaka.org"
-        - "anywaka.org"
+        - "www.ginyverse.com"
+        - "ginyverse.com"
       secretName: lp-anywaka-tls
   rules:
-    - host: anywaka.org
+    - host: ginyverse.com
       http:
         paths:
           - pathType: Prefix
@@ -23,7 +23,7 @@ spec:
                 name: lp-fe
                 port:
                   number: 80
-    - host: www.anywaka.org
+    - host: www.ginyverse.com
       http:
         paths:
           - pathType: Prefix
