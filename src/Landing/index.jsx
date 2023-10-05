@@ -332,8 +332,8 @@ export default function Landing() {
           </div>
         </div>
         <div className="links">
-          <div>
-            <img src={PurpleLogo} alt="" />
+          <div style={{width:'150px'}}>
+            <img style={{width:'100%'}} src={PurpleLogo} alt="" />
           </div>
           <div>
             <a href="#about">About us</a>
