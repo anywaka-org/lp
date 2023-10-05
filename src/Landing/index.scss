@@ -53,6 +53,13 @@
            justify-content: space-between;
            align-items: center;
 
+           .img{
+            width:150px;
+
+            img{
+                width: 100%;
+            }
+           }
            .download_links{
                display: flex;
                align-items: center;
@@ -340,7 +347,7 @@ text-align: center;
         // color: white;
         
         div{
-            width: 50%;
+            width: 90%;
             color: #F1F1FE;
             
             h3{

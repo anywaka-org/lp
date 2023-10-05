@@ -10,12 +10,29 @@ import Miscs from "../assets/png/Miscs.png";
 import Apple from "../assets/png/Apple.png";
 import Button from "../components/Button";
 import Tick from "../assets/svg/Tick";
-import { useNavigate } from "react-router-dom";
+
+import { useState } from "react";
+import { toast,ToastContainer } from "react-toast";
+import axios from "axios";
 
 export default function Landing() {
  
-  // const navigate = useNavigate();
+  const Base_url = 'https://staging.api.ginyverse.com/'
+  const [sub,setSub]=useState({});
+  
+  const submit = (e) => {
+    e.preventDefault()
+    if (sub.email && sub.lastname && sub.firstname) {
+      axios.post(Base_url + 'user/newsletter', sub).then(() => {
+
+        toast.success("Subscribed succcessfully")
+      }).catch((error) => toast.error('An error occured, try again please'))
+    }
+  }
   return (
+    <>
+   <ToastContainer position="top-center" delay={'1000'}/>
+
     <div className="landing">
       <section className="intro">
         <div className="gradient">
@@ -225,14 +242,14 @@ export default function Landing() {
         <div className="write_up">
           <div className="header">
             <h3>About us</h3>
-            <h1>Why Choose Anywork?</h1>
+            <h1>Why Choose Ginyverse?</h1>
           </div>
           <p>
-            AnyWork Nigeria - Think of us like Diner Dash but for errands.
-            We offer an on-demand platform where users can detail their errand needs, connecting them with verified independent service professionals in their community. Whether you need assistance or wish to lend a hand, we're your connection. Anywork instantly matches hundreds of customers every week with top-rated professionals near-by
+            Ginyverse Nigeria - Think of us like Diner Dash but for errands.
+            We offer an on-demand platform where users can detail their errand needs, connecting them with verified independent service professionals in their community. Whether you need assistance or wish to lend a hand, we're your connection. Ginyverse instantly matches hundreds of customers every week with top-rated professionals near-by
           </p>
           <p>
-            AnyWork, also known as Anywaka, was founded by NAK  with a mission to enhance productivity by effectively accomplishing errands. We strive to save you time, energy, and money. With a seamless 60-second booking process, AnyWork guarantees a happier and easier life. Experience the AnyWork difference today!
+            Ginyverse, was founded by NAK  with a mission to enhance productivity by effectively accomplishing errands. We strive to save you time, energy, and money. With a seamless 60-second booking process, Ginyverse guarantees a happier and easier life. Experience the Ginyverse difference today!
 
           </p>
         </div>
@@ -249,7 +266,7 @@ export default function Landing() {
           <span>Fill the form and shoot us an email</span>
 
           <div className="contacts">
-            <a href="mailto:">
+            <a href="mailto:info@ginyverse.com">
               <svg
                 width="24"
                 height="24"
@@ -274,7 +291,7 @@ export default function Landing() {
                   stroke-linejoin="round"
                 />
               </svg>
-              <span>obianywork@gmail.com</span>
+              <span> info@ginyverse.com</span>
             </a>
             <a href="tel:+">
               <svg
@@ -298,17 +315,17 @@ export default function Landing() {
         </div>
         <div className="mail">
           <form action="">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="email" />
-            <input type="text" placeholder="subject" />
-            <textarea
+            <input name="firstname" onChange={(e)=>setSub({...sub,[e.target.name]:e.target.value})} type="text" placeholder="First Name" />
+            <input name="lastname" onChange={(e) => setSub({ ...sub, [e.target.name]: e.target.value })} type="text" placeholder="Last Name" />
+            <input name="email" onChange={(e) => setSub({ ...sub, [e.target.name]: e.target.value })} type="email" placeholder="Email" />
+            {/* <textarea
               name=""
               id=""
               cols="30"
               rows="10"
               placeholder="body"
-            ></textarea>
-            <Button content={"Submit"} />
+            ></textarea> */}
+            <Button onClick={submit} content={"Subscribe"} />
           </form>
         </div>
       </section>
@@ -319,7 +336,7 @@ export default function Landing() {
           </div>
           <div className="right">
             <p>
-              Download the anywork app on the Google Playstore and Apple store
+              Download the Ginyverse app on the Google Playstore and Apple store
             </p>
             <div className="download_links">
               <div className="img">
@@ -343,5 +360,6 @@ export default function Landing() {
         </div>
       </footer>
     </div>
+    </>
   );
 }
