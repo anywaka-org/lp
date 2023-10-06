@@ -65,11 +65,11 @@ export default function Landing() {
             </p>
             <div className="next">
               <Button
-                // onClick={() => navigate("/home")}
+                  onClick={() => toast.success("We are launching soon, scroll down to subscribe")}
                 content={"Getting started"}
               />
               <span
-              //  onClick={() => navigate("/login")} 
+                  onClick={() => toast.success("We are launching soon, scroll down to subscribe")} 
                className="login">
                 Login
               </span>
@@ -235,7 +235,7 @@ export default function Landing() {
         </div>
 
         <Button 
-        // onClick={() => navigate("/home")}
+        onClick={() => toast.success("We are launching soon, scroll down to subscribe")}
          content={"Get started"} />
       </section>
       <section className="about_us">
