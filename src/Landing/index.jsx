@@ -14,6 +14,7 @@ import Tick from "../assets/svg/Tick";
 import { useState } from "react";
 import { toast,ToastContainer } from "react-toast";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
  
@@ -352,7 +353,7 @@ export default function Landing() {
             <img style={{width:'100%'}} src={PurpleLogo} alt="" />
           </div>
           <div>
-            <a href="#about">About us</a>
+            <Link to="/tandc">Terms and condition</Link>
             <a href="#contact">Contact us</a>
             {/* <span></span> */}
           </div>
