@@ -31,7 +31,7 @@ export default function Landing() {
   }
   return (
     <>
-   <ToastContainer position="top-center" delay={'1000'}/>
+   <ToastContainer position="top-center" delay={'10000'}/>
 
     <div className="landing">
       <section className="intro">
@@ -94,7 +94,6 @@ export default function Landing() {
                   stroke-linejoin="round"
                 />
               </svg>
-
               <span>Break the bond with sapa today</span>
             </div>
           </div>

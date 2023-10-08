@@ -8,7 +8,9 @@
         };
     }
 }
-
+.toastContainer{
+    z-index: 999;
+}
 @include responsvie(desktop){
  .landing{
     *{
