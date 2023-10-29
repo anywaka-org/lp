@@ -259,7 +259,7 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      <section className="contact_us">
+      <section id="contact" className="contact_us">
         <div className="details">
           <p className="head">Contact us</p>
           <h2>How can we help you?</h2>
@@ -353,7 +353,8 @@ export default function Landing() {
             <img style={{width:'100%'}} src={PurpleLogo} alt="" />
           </div>
           <div>
-            <Link to="/tandc">Terms and condition</Link>
+              <Link to="/tandc">Terms and condition</Link>
+              <Link to="/help">Help</Link>
             <a href="#contact">Contact us</a>
             {/* <span></span> */}
           </div>
