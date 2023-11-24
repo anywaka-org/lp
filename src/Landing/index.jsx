@@ -30,6 +30,11 @@ export default function Landing() {
       }).catch((error) => toast.error('An error occured, try again please'))
     }
   }
+  const navigateToapp= ()=> {
+    const a=document.createElement('a')
+    a.href ="https://app.ginyverse.com/auth"
+    a.click()
+}
   return (
     <>
    <ToastContainer position="top-center" delay={'10000'}/>
@@ -66,11 +71,11 @@ export default function Landing() {
             </p>
             <div className="next">
               <Button
-                  onClick={() => toast.success("We are launching soon, scroll down to subscribe")}
+                  onClick={navigateToapp}
                 content={"Getting started"}
               />
               <span
-                  onClick={() => toast.success("We are launching soon, scroll down to subscribe")} 
+                  onClick={navigateToapp} 
                className="login">
                 Login
               </span>
@@ -146,7 +151,7 @@ export default function Landing() {
             </div>
           </div>
           <Button 
-          // onClick={() => navigate("/home")}
+          onClick={navigateToapp}
            content={"Let's get in"} />
         </div>
         <div className="image">
@@ -235,7 +240,7 @@ export default function Landing() {
         </div>
 
         <Button 
-        onClick={() => toast.success("We are launching soon, scroll down to subscribe")}
+        onClick={navigateToapp}
          content={"Get started"} />
       </section>
       <section className="about_us">
@@ -339,10 +344,10 @@ export default function Landing() {
               Download the Ginyverse app on the Google Playstore and Apple store
             </p>
             <div className="download_links">
-              <div className="img">
+              <div onClick={()=>toast.success("Our App is coming soon!!")} className="img">
                 <img src={Google} alt="" />
               </div>
-              <div className="img">
+                <div onClick={() => toast.success("Our App is coming soon!!")} className="img">
                 <img src={Apple} alt="" />
               </div>
             </div>
