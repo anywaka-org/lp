@@ -12,6 +12,11 @@
    font-weight: 300;
  }
 
+ @font-face {
+   font-family: OutfitR;
+   src: url(./assets/fonts/ttf/Outfit-Regular.ttf);
+   font-weight: 300;
+ }
  * {
    font-family: Outfit;
  }

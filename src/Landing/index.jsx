@@ -52,12 +52,12 @@ export default function Landing() {
             <img src={PurpleLogo} alt="" />
           </div>
           <div className="download_links">
-            <div className="img">
-              <img src={Google} alt="" />
-            </div>
-            <div className="img">
-              <img src={Apple} alt="" />
-            </div>
+              <a href="https://play.google.com/store/apps/details?id=com.app.ginyverse&pcampaignid=web_share" className="img">
+                <img src={Google} alt="" />
+              </a>
+              <a href="https://apps.apple.com/ng/app/ginyverse/id6468913686" className="img">
+                <img src={Apple} alt="" />
+              </a>
           </div>
         </div>
         <div className="write_up">
@@ -166,23 +166,16 @@ export default function Landing() {
 
         <div className="tabs">
           <div className="tab">
-            <div className="icon">
-              <svg
-                width="81"
-                height="80"
-                viewBox="0 0 81 80"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="0.953613"
-                  width="80"
-                  height="80"
-                  rx="15"
-                  fill="#5D5FEF"
-                />
-              </svg>
-            </div>
+            
+                <div className="icon">
+                  <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.248535" width="80" height="80" rx="15" fill="#5D5FEF" />
+                    <path d="M40.2947 42.145C42.8794 42.145 44.9747 40.0497 44.9747 37.465C44.9747 34.8803 42.8794 32.785 40.2947 32.785C37.7101 32.785 35.6147 34.8803 35.6147 37.465C35.6147 40.0497 37.7101 42.145 40.2947 42.145Z" stroke="white" stroke-width="1.5" />
+                    <path d="M27.725 34.735C30.68 21.745 49.925 21.76 52.865 34.75C54.59 42.37 49.85 48.82 45.695 52.81C42.68 55.72 37.91 55.72 34.88 52.81C30.74 48.82 26 42.355 27.725 34.735Z" stroke="white" stroke-width="1.5" />
+                  </svg>
+
+                </div>
+            
             <h4>Real time location</h4>
             <p>
               Share your real-time location, and other locations on the map to
@@ -190,23 +183,22 @@ export default function Landing() {
             </p>
           </div>
           <div className="tab">
-            <div className="icon">
-              <svg
-                width="81"
-                height="80"
-                viewBox="0 0 81 80"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="0.218262"
-                  width="80"
-                  height="80"
-                  rx="15"
-                  fill="#5D5FEF"
-                />
-              </svg>
-            </div>
+              <div className="icon">
+                <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.953613" width="80" height="80" rx="15" fill="#5D5FEF" />
+                  <path d="M51.3253 50.005L48.1153 43.6001L44.9053 50.005" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M45.4902 48.865H50.7702" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M48.1151 55C43.9151 55 40.4951 51.5949 40.4951 47.3799C40.4951 43.1799 43.9001 39.76 48.1151 39.76C52.3151 39.76 55.7351 43.1649 55.7351 47.3799C55.7351 51.5949 52.3301 55 48.1151 55Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M30.2654 25H36.1454C39.2504 25 40.7504 26.5 40.6754 29.53V35.41C40.7504 38.515 39.2504 40.015 36.1454 39.94H30.2654C27.2354 40 25.7354 38.5 25.7354 35.395V29.515C25.7354 26.5 27.2354 25 30.2654 25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M36.2506 30.775H30.1606" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M33.1904 29.755V30.775" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M34.7205 30.76C34.7205 33.385 32.6655 35.515 30.1455 35.515" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M36.2506 35.515C35.1556 35.515 34.1656 34.93 33.4756 34" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M25.7354 44.5C25.7354 50.305 30.4304 55 36.2354 55L34.6603 52.375" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M55.7354 35.5C55.7354 29.695 51.0404 25 45.2354 25L46.8104 27.625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </div>
             <h4>Escrow system</h4>
             <p>
               After payment for an errand, the money is kept in our escrow until
@@ -214,23 +206,15 @@ export default function Landing() {
             </p>
           </div>
           <div className="tab">
-            <div className="icon">
-              <svg
-                width="81"
-                height="80"
-                viewBox="0 0 81 80"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="0.953613"
-                  width="80"
-                  height="80"
-                  rx="15"
-                  fill="#5D5FEF"
-                />
-              </svg>
-            </div>
+              <div className="icon">
+                <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.953613" width="80" height="80" rx="15" fill="#5D5FEF" />
+                  <path d="M48.5 35.5C48.5 41.305 43.46 46 37.25 46L35.855 47.68L35.03 48.67C34.325 49.51 32.975 49.33 32.51 48.325L30.5 43.9C27.77 41.98 26 38.935 26 35.5C26 29.695 31.04 25 37.25 25C41.78 25 45.695 27.505 47.45 31.105C48.125 32.44 48.5 33.925 48.5 35.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M56 41.2899C56 44.7249 54.23 47.77 51.5 49.69L49.49 54.1149C49.025 55.1199 47.675 55.315 46.97 54.46L44.75 51.7899C41.12 51.7899 37.88 50.185 35.855 47.68L37.25 46C43.46 46 48.5 41.305 48.5 35.5C48.5 33.925 48.125 32.44 47.45 31.105C52.355 32.23 56 36.3699 56 41.2899Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M33.5 35.5H41" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </div>
             <h4>Chat system</h4>
             <p>
               You can chat with helpers and people that need help, to know the
@@ -344,12 +328,12 @@ export default function Landing() {
               Download the Ginyverse app on the Google Playstore and Apple store
             </p>
             <div className="download_links">
-              <div onClick={()=>toast.success("Our App is coming soon!!")} className="img">
-                <img src={Google} alt="" />
-              </div>
-                <div onClick={() => toast.success("Our App is coming soon!!")} className="img">
-                <img src={Apple} alt="" />
-              </div>
+                <a href="https://play.google.com/store/apps/details?id=com.app.ginyverse&pcampaignid=web_share" className="img">
+                  <img src={Google} alt="" />
+                </a>
+                <a href="https://apps.apple.com/ng/app/ginyverse/id6468913686" className="img">
+                  <img src={Apple} alt="" />
+                </a>
             </div>
           </div>
         </div>
