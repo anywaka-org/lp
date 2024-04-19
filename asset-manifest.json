@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0bb6cd4d.css",
+    "main.js": "/static/js/main.8d9c633a.js",
+    "static/js/787.ca822a80.chunk.js": "/static/js/787.ca822a80.chunk.js",
+    "static/media/Miscs.png": "/static/media/Miscs.aa44e157dfcabbd68938.png",
+    "static/media/about.png": "/static/media/about.a98ef137e865be37421f.png",
+    "static/media/bottom.png": "/static/media/bottom.48fdf7abf44f99850125.png",
+    "static/media/errand1.png": "/static/media/errand1.add59999c57fadeb05cf.png",
+    "static/media/Right.png": "/static/media/Right.7ffb06da0c5e188a4c53.png",
+    "static/media/gradient.png": "/static/media/gradient.3496125547018afcd48e.png",
+    "static/media/purpleLogo.png": "/static/media/purpleLogo.5167ddf6ee487686a5ba.png",
+    "static/media/Outfit-Regular.ttf": "/static/media/Outfit-Regular.d8ad46711483a654e789.ttf",
+    "static/media/Outfit-SemiBold.ttf": "/static/media/Outfit-SemiBold.c7ff049cc2ed9aaead2f.ttf",
+    "static/media/landing1.png": "/static/media/landing1.314fe3c6acb4964c7699.png",
+    "index.html": "/index.html",
+    "main.0bb6cd4d.css.map": "/static/css/main.0bb6cd4d.css.map",
+    "main.8d9c633a.js.map": "/static/js/main.8d9c633a.js.map",
+    "787.ca822a80.chunk.js.map": "/static/js/787.ca822a80.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bb6cd4d.css",
+    "static/js/main.8d9c633a.js"
+  ]
+}
